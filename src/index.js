@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { App } from './App';
+import "./styles/tailwind.css";
+
 import DataProvider from './store/DataProvider';
 import { BrowserRouter } from 'react-router-dom';
 
