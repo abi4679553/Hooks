@@ -10,34 +10,38 @@ function DataProvider(props) {
     };
 
     const friendInfromation = [
-           {
-               name : "abi",
-               age  : 20 , 
-               college : "nanthe college" ,
-               course : "cse"
-           },
-           {
-                name : "saravan" , 
-                age : 20 ,
-                collge : "kongu collge",
-                course : "eee"
-           },
-           {
-                name : "aravindan",
-                age : 20 ,
-                collge : "erode sengunthar",
-                course : "mech"
-           }
-    ]
+        {
+            name: "abi",
+            age: 20,
+            college: "nanthe college",
+            course: "cse"
+        },
+        {
+            name: "saravan",
+            age: 20,
+            collge: "kongu collge",
+            course: "eee"
+        },
+        {
+            name: "aravindan",
+            age: 20,
+            collge: "erode sengunthar",
+            course: "mech"
+        }
+    ];
 
-    const numbers = [1,2,3,4,5,6,7,8,10]
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 10];
 
     const myinfo = {
-        name : "abi",
-        age :  20   
-    }
-    
-    const data = {sra , friendInfromation , numbers , myinfo}
+        name: "abi",
+        age: 20
+    };
+
+    const myweb = "example.com"; // ❗ You used this variable but didn’t define it
+
+    // ✅ All data inside function
+    const data = { sra, friendInfromation, numbers, myinfo, myweb };
+
     return (
         <DContext.Provider value={data}>
             {props.children}
@@ -46,7 +50,4 @@ function DataProvider(props) {
 }
 
 export default DataProvider;
-export {DContext}
-
-
-
+export { DContext };
